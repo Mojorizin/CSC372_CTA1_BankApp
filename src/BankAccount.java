@@ -19,12 +19,12 @@ public class BankAccount {
          * Displays new balance.
          */
 
-        System.out.println("------------------------------------");
+        System.out.println("--------------Deposit----------------------");
         System.out.printf("Your starting account balance is $%.2f\n", balance);
         balance = balance + depositAmount;
         System.out.println("You deposited $" + depositAmount);
-        System.out.printf("Your new balance is $%.2f\n", balance);
-        System.out.println("------------------------------------");
+        System.out.printf("Your new balance is $%.2f", balance);
+        System.out.print("\n-------------------------------------------");
         return balance;
     }
     public double withdrawl(double withdrawAmount) {
@@ -34,20 +34,20 @@ public class BankAccount {
          * Displays new balance.
          */
 
-        System.out.println("------------------------------------");
-        System.out.printf("Your starting account balance is $%.2f\n", balance);
+        System.out.print("\n--------------Withdraw---------------------");
+        System.out.printf("\nYour starting account balance is $%.2f", balance);
         balance = balance - withdrawAmount;
-        System.out.printf("You withdrew $%.2f\n", withdrawAmount);
-        System.out.printf("Your new balance is $%.2f\n", balance);
-        System.out.println("------------------------------------");
+        System.out.printf("\nYou withdrew $%.2f", withdrawAmount);
+        System.out.printf("\nYour new balance is $%.2f", balance);
+        System.out.print("\n-------------------------------------------");
         return balance;
     }
     public void accountSummary() {
         /*
          * Prints out the account info.
          */
-
-        System.out.printf("Name: %s %s\nAccount Number: %d\nAccount Balance: $%.2f",
+        System.out.print("\n-----------Bank Account Info---------------");
+        System.out.printf("\nName: %s %s\nAccount Number: %d\nAccount Balance: $%.2f",
                 firstName, lastName, accountID, balance);
     }
 

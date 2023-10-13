@@ -12,19 +12,19 @@ public class CheckingAccount extends BankAccount {
          * If the account balance is negative, $30 late fee is added and negative balance is displayed.
          * If the account balance is positive, displays the balance.
          */
-
-        System.out.printf("Your current balance is: $%.2f\nYour withdraw amount is: $%.2f", getBalance(), withdrawAmount);
+        System.out.print("\n--------------Withdraw----------------------");
+        System.out.printf("\nYour current balance is: $%.2f\nYour withdraw amount is: $%.2f", getBalance(), withdrawAmount);
 
         if (getBalance() - withdrawAmount < 0) {
             setBalance((getBalance() - withdrawAmount - 30));
-            System.out.println("\nYour account has a negative balance and has been assessed a $30 fee.");
-            System.out.printf("Your new balance is: $%.2f. Please make a deposit.", getBalance());
-            System.out.println("\n------------------------------------");
+            System.out.print("\nYour account has a negative balance and has been assessed a $30 fee.");
+            System.out.printf("\nYour new balance is: $%.2f. Please make a deposit.", getBalance());
+            System.out.print("\n-------------------------------------------");
         }
         else {
             setBalance ((getBalance() - withdrawAmount));
             System.out.printf("\nYour new balance is: $%.2f", getBalance());
-            System.out.println("\n------------------------------------");
+            System.out.println("\n--------------------------------------------");
         }
         return getBalance();
     }
