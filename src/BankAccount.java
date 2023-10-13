@@ -37,7 +37,7 @@ public class BankAccount {
         System.out.println("------------------------------------");
         System.out.printf("Your starting account balance is $%.2f\n", balance);
         balance = balance - withdrawAmount;
-        System.out.printf("You deposited $%.2f\n", withdrawAmount);
+        System.out.printf("You withdrew $%.2f\n", withdrawAmount);
         System.out.printf("Your new balance is $%.2f\n", balance);
         System.out.println("------------------------------------");
         return balance;
