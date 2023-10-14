@@ -30,8 +30,8 @@ public class CheckingAccount extends BankAccount {
     }
     public void displayAccount() {
         /*
-            Prints out the info from the super by calling the account Summary method.
-            Adds another line to show the interest rate on the checking account.
+         * Prints out the info from the super by calling the account Summary method.
+         * Adds another line to show the interest rate on the checking account.
          */
         accountSummary();
         System.out.printf("\nAccount interest rate is: " + (interestRate * 100) + "%%");

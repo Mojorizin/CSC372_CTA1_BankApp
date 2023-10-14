@@ -15,7 +15,7 @@ public class BankAccount {
     public double deposit(double depositAmount) {
         /*
          * Displays starting balance.
-         * Subtracts an amount (passed as an argument) from the balance.
+         * Adds an amount (passed as an argument) to the balance.
          * Displays new balance.
          */
 
